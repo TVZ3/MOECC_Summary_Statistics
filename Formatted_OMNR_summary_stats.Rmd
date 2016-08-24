@@ -30,6 +30,7 @@ x1 <- select(x, LAKE.NUMBER, contains("prec_"), contains("26pr70"),
              contains("45pr70"), contains("60pr70"), contains("85pr70"))
 #Convert tbl class back to a data frame
 x2<-data.frame(x1)
+names(x2)
 write.csv (x2, file = "algalprecip_boxplot_data.csv",row.names=FALSE)
 ```
 
