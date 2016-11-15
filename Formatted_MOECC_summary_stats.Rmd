@@ -21,10 +21,10 @@ library(reshape)
 ###### Possible if all data to be explored have common characters in their column headers
 
 ```{r echo=FALSE}
-x<-read.csv("C:\\Users\\adminuser\\Desktop\\EVERYTHING THOMAS\\OMNR Alagae project\\SC_Ontario+Algonqiun+Algoma_Future_clim.csv")
+x<-read.csv("C:\\Users\\adminuser\\Desktop\\EVERYTHING THOMAS\\MOECC Alagae project\\SC_Ontario+Algonqiun+Algoma_Future_clim.csv")
 ```
 
-```{r}
+```{r results="hide"}
 #Select a subset of variables by column
 x1 <- select(x, LAKE.NUMBER, contains("prec_"), contains("26pr70"), 
              contains("45pr70"), contains("60pr70"), contains("85pr70"))
